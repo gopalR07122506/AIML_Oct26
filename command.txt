@@ -1,0 +1,28 @@
+#Git Commit Command
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/gopalR07122506/user_test.git (Optinal)
+git push -u origin main
+
+
+GitHub Connect with VSCode:
+1. Click on acoounts and logout if previous login
+2. Try to login again from accounts
+3. Authenticate from github
+
+
+#Python Virtual Env Create:
+
+#Windows
+1. Create Env: python -m venv .venv
+2. Activate Env  Windows: .venv/Scripts/activate
+3. Dependencies Install: pip install -r requirements.txt
+
+
+#Linux
+1. Create Env: python3 -m venv .venv
+2. Activate Env  Linux: source .venv/bin/activate
+3. Dependencies Install: pip install -r requirements.txt

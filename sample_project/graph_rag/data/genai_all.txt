@@ -1,0 +1,195 @@
+Artificial Intelligence (AI) is the field of computer science that builds systems able to perform tasks that normally need human intelligence. Machine Learning is a branch of Artificial Intelligence. Deep Learning is a branch of Machine Learning.
+
+Machine Learning is an approach where a computer learns patterns from data instead of following hand-written rules. Machine Learning models are trained on examples and then make predictions on new data. Supervised learning, unsupervised learning and reinforcement learning are the three main types of Machine Learning.
+
+Supervised learning trains a model on labeled data, where every example has a known correct answer. Unsupervised learning finds hidden structure in unlabeled data, for example by clustering. Reinforcement learning trains an agent to take actions in an environment to maximize a reward.
+
+Deep Learning uses neural networks with many layers to learn complex patterns. A neural network is made of connected units called neurons, and each connection has a weight. Training a neural network adjusts these weights using an algorithm called backpropagation and an optimizer such as gradient descent.
+
+Generative AI is a type of Artificial Intelligence that creates new content such as text, images, audio, video and code. Generative AI models learn the patterns of their training data and then generate new examples that follow those patterns. Large Language Models, diffusion models and Generative Adversarial Networks are major families of Generative AI.
+
+A Large Language Model (LLM) is a Deep Learning model trained on very large amounts of text to understand and generate language. An LLM predicts the next token in a sequence, and repeating this step produces whole sentences and documents. GPT, Llama, Claude, Gemini and Mistral are well-known LLM families.
+
+A token is the basic unit of text that an LLM reads and writes. A token can be a whole word, part of a word or a single character. The English word "unbelievable" may be split into several tokens, and LLM pricing and limits are usually measured in tokens.
+
+Tokenization is the process of converting text into tokens. Byte Pair Encoding (BPE) is a popular tokenization algorithm that merges frequent pairs of characters into larger tokens. Each token is mapped to a number called a token ID before it enters the model.
+
+An embedding is a list of numbers that represents the meaning of a token, a sentence or a document. Texts with similar meaning have embeddings that lie close together in vector space. Word2Vec, developed at Google in 2013, was an early popular method for creating word embeddings.
+
+The Transformer is the neural network architecture behind modern LLMs. The Transformer was introduced in 2017 in the Google research paper "Attention Is All You Need". The Transformer uses a mechanism called self-attention to understand how words in a sentence relate to each other.
+
+Self-attention lets every token in a sequence look at every other token and decide which ones are important. For example, in the sentence "The animal did not cross the road because it was tired", self-attention helps the model link the word "it" to "animal". Self-attention replaced older recurrent neural networks because it can be computed in parallel.
+
+BERT is a Transformer model released by Google in 2018. BERT is an encoder-only model that reads text in both directions, and it is mainly used for understanding tasks such as classification and search. GPT is a decoder-only model that reads left to right and is mainly used for text generation.
+
+GPT stands for Generative Pre-trained Transformer. GPT models were developed by OpenAI, and GPT-3 was released in 2020 with 175 billion parameters. ChatGPT, released by OpenAI in November 2022, brought LLMs to the general public.
+
+A parameter is a learned number inside a neural network, such as a weight. The size of an LLM is often described by its parameter count, for example 7 billion or 70 billion parameters. Larger models usually have more capability but need more memory and more computing power.
+
+Training is the process in which a model learns by adjusting its parameters on data. Inference is the process of using a trained model to produce an output for a new input. Training needs large clusters of GPUs, while inference can run on a single GPU or even a laptop for small models.
+
+Pre-training is the first stage of building an LLM. During pre-training the model reads huge amounts of text from books, websites and code and learns to predict the next token. This is called self-supervised learning because the text itself provides the correct answers.
+
+Fine-tuning is a second stage in which a pre-trained model is trained further on a smaller, specific dataset. Fine-tuning can teach a model a particular style, a domain such as medicine, or a task such as following instructions. A fine-tuned model starts from the knowledge of the pre-trained model.
+
+A prompt is the input text given to an LLM. A good prompt states the task, gives context and describes the desired output format. The skill of writing effective prompts is called prompt engineering.
+
+A system prompt is a special instruction that sets the role and rules of the LLM for a whole conversation. A user prompt is the message typed by the user. The LLM combines the system prompt, the conversation history and the user prompt to produce its reply.
+
+Temperature is a setting that controls how random the output of an LLM is. A low temperature such as 0 makes the output focused and repeatable, while a high temperature makes the output more creative and varied. Top-p, also called nucleus sampling, is another setting that limits the choice to the most likely tokens whose probabilities add up to p.
+
+The context window is the maximum number of tokens an LLM can consider at one time, including the prompt and the reply. If a conversation grows beyond the context window, older text must be removed or summarized. Modern models have context windows ranging from thousands to over a million tokens.
+
+A hallucination is an answer from an LLM that sounds confident but is false or invented. Hallucinations happen because an LLM predicts likely text and does not check facts. Retrieval-Augmented Generation and grounding the model in trusted documents reduce hallucinations.
+
+Open-source or open-weight models publish their weights so that anyone can download and run them. Llama from Meta, Mistral from Mistral AI and Qwen from Alibaba are examples of open-weight model families. Closed models such as GPT from OpenAI, Claude from Anthropic and Gemini from Google are accessed through an API.
+
+Hugging Face is a platform and company that hosts thousands of open models and datasets. The Hugging Face Transformers library is a Python library for loading and running these models. Developers use Hugging Face to share models, evaluate them and build applications.
+
+Ollama is a tool that runs open-weight LLMs locally on a personal computer. Ollama downloads models with a simple command such as "ollama pull llama3.2" and serves them through a local API. Ollama is built on top of the llama.cpp inference engine.
+
+Text generation, image generation, audio generation and code generation are common Generative AI tasks. Stable Diffusion, released by Stability AI in 2022, generates images from text descriptions. Whisper from OpenAI converts speech to text, and GitHub Copilot suggests code inside an editor.
+
+Common business use cases of Generative AI include customer-support chatbots, document summarization, content writing, code assistants and enterprise search. Companies often connect an LLM to their own documents so that employees can ask questions in natural language. Generative AI can save time but still needs human review for important decisions.
+
+Bias is a limitation of Generative AI because models learn from human-written data that contains stereotypes and gaps. Other limitations are hallucinations, outdated knowledge, high computing cost and privacy risk when sensitive data is sent to a third-party service. Responsible AI practice means testing for these problems and keeping a human in the loop.
+
+A Large Language Model has a knowledge cutoff date, which is the point after which no training data was included. The model cannot know events after this date unless it is given new information through a prompt or a search tool. This is one reason why connecting an LLM to external data is important.
+
+The typical lifecycle of a Generative AI application has five steps: choose a model, design the prompts, connect the data, test and evaluate, and deploy with monitoring. Each step can be improved over time. Beginners usually start with a hosted API or Ollama and then add more advanced techniques.
+
+Prompt engineering is the practice of designing prompts to get reliable results from an LLM. Zero-shot prompting gives only the task, while few-shot prompting adds a few examples of the desired input and output. Clear instructions, examples and an explicit output format are the most effective techniques.
+
+Chain-of-thought prompting asks the LLM to reason step by step before giving the final answer. Chain-of-thought prompting was described by Google researchers in 2022 and improves accuracy on math and logic problems. Reasoning models apply the same idea by producing a long internal reasoning trace before the answer.
+
+Structured output means forcing an LLM to return data in a fixed format such as JSON. Developers use JSON schemas or a JSON mode so that the output can be parsed by code. Ollama supports a format option that restricts the reply to valid JSON.
+
+Function calling, also called tool use, lets an LLM request that an application run a function such as a weather lookup or a database query. The LLM returns the function name and arguments, the application runs the function and sends the result back to the LLM. Function calling turns an LLM from a text generator into a component that can act.
+
+Retrieval-Augmented Generation (RAG) combines a retriever with an LLM generator. The RAG technique was introduced in 2020 by researchers at Facebook AI Research. RAG retrieves relevant documents for a question and adds them to the prompt so that the LLM answers from real data.
+
+A RAG pipeline has two phases. In the indexing phase, documents are loaded, split into chunks, converted into embeddings and stored in a vector database. In the query phase, the question is embedded, the most similar chunks are retrieved, and the LLM writes an answer using those chunks.
+
+Chunking is the process of splitting documents into smaller pieces before indexing. Common strategies are fixed-size chunks, recursive splitting by paragraphs and sentences, and semantic chunking based on meaning. Chunk overlap keeps context between neighboring chunks, and chunk size affects retrieval quality.
+
+A vector database stores embeddings and finds the nearest ones to a query vector. Chroma, Pinecone, Weaviate, Milvus and Qdrant are popular vector databases. FAISS, created by Meta, is a library for fast similarity search rather than a full database.
+
+Cosine similarity is a common measure of how close two embeddings are, based on the angle between the vectors. Euclidean distance and dot product are other similarity measures. Vector databases use approximate nearest neighbor search to find close vectors quickly in large collections.
+
+HNSW (Hierarchical Navigable Small World) is a popular approximate nearest neighbor algorithm. HNSW builds a multi-layer graph of vectors and searches it from coarse layers to fine layers. HNSW gives fast and accurate search at the cost of extra memory.
+
+An embedding model converts text into vectors. nomic-embed-text, BGE, E5 and OpenAI text-embedding models are widely used embedding models. The vector size depends on the model, and nomic-embed-text produces 768-dimensional vectors.
+
+BM25 is a classic keyword-based ranking algorithm used in search engines. Hybrid search combines BM25 keyword search with vector search, which helps when exact terms such as product codes matter. Results from the two methods are merged using a technique such as Reciprocal Rank Fusion.
+
+A reranker is a model that re-scores the retrieved chunks to put the most relevant ones first. A cross-encoder reranker reads the question and a chunk together and gives a more precise relevance score than vector similarity. Reranking usually improves the quality of RAG answers.
+
+LangChain is an open-source framework for building LLM applications with chains, prompts, retrievers and tools. LlamaIndex is a framework focused on connecting LLMs to data sources and building RAG pipelines. LangGraph, from the LangChain team, builds stateful agent workflows as graphs.
+
+Supervised fine-tuning (SFT) trains a model on pairs of instructions and ideal responses. Instruction tuning is a form of SFT that teaches a base model to follow user instructions. A base model only continues text, while an instruction-tuned model behaves like an assistant.
+
+Parameter-Efficient Fine-Tuning (PEFT) updates only a small number of parameters instead of the whole model. LoRA (Low-Rank Adaptation) is a PEFT method published by Microsoft researchers in 2021. LoRA freezes the original weights and trains small low-rank matrices that are added to them.
+
+QLoRA combines LoRA with 4-bit quantization of the base model. QLoRA makes it possible to fine-tune large models on a single consumer GPU. The Hugging Face PEFT and TRL libraries are commonly used to run LoRA and QLoRA training.
+
+Quantization reduces the precision of model weights from 16-bit numbers to 8-bit or 4-bit numbers. Quantization shrinks memory use and speeds up inference with a small loss in quality. GGUF is a file format used by llama.cpp and Ollama to store quantized models.
+
+llama.cpp is a C++ inference engine that runs LLMs efficiently on CPUs and consumer GPUs. llama.cpp was created by Georgi Gerganov and supports GGUF models. Ollama uses llama.cpp to run models locally.
+
+Perplexity is a metric that measures how well a language model predicts text, and lower perplexity is better. MMLU is a benchmark of multiple-choice questions across many subjects. BLEU and ROUGE compare generated text with reference text and are used for translation and summarization.
+
+RAG evaluation checks both retrieval and generation. Retrieval metrics include recall at k and precision at k, which measure whether the right chunks were found. Generation metrics include faithfulness, which checks that the answer is supported by the context, and answer relevance. The RAGAS framework automates many of these metrics.
+
+Guardrails are rules and checks that keep an LLM application safe and on topic. Guardrails can filter harmful input, block sensitive data such as phone numbers, validate output format and refuse out-of-scope requests. NeMo Guardrails and Guardrails AI are open-source tools for this purpose.
+
+Streamlit and Gradio are Python libraries for building quick web interfaces for AI demos. FastAPI is a Python framework for serving an LLM application as a REST API. Docker packages the application so that it runs the same way on any machine.
+
+Caching stores the answers to repeated requests so the LLM does not need to run again. Exact-match caching returns a stored answer for an identical prompt, and semantic caching returns a stored answer for a similar question. Caching reduces cost and response time.
+
+Streaming sends the LLM answer to the user token by token as it is generated. Streaming improves the perceived speed of chat applications. Most LLM APIs and Ollama support streaming responses.
+
+Batch processing runs many LLM requests together to improve throughput and lower cost. Rate limits restrict how many requests or tokens an API user can send per minute. Applications use retries with exponential backoff to handle rate limit errors.
+
+An LLM API usually accepts a list of messages with roles such as system, user and assistant. The API returns the next assistant message and reports the number of input and output tokens used. Developers control the output with parameters such as temperature, top-p and maximum tokens.
+
+Embeddings power several tasks beyond RAG. Semantic search finds documents by meaning, clustering groups similar documents, and recommendation systems suggest similar items. Classification can be done by training a small model on top of embeddings.
+
+Data preparation is a critical step for RAG. Documents such as PDF, Word and HTML files must be parsed into clean text, and tables and images need special handling. OCR extracts text from scanned documents, and metadata such as source and date helps filter results.
+
+Metadata filtering restricts the search to chunks that match conditions such as department, date or document type. Vector databases combine similarity search with metadata filters. Access control can use metadata so that users only retrieve documents they are allowed to see.
+
+Scaled dot-product attention computes attention from three matrices called Query, Key and Value. The Query of one token is compared with the Keys of all tokens to produce attention scores, a softmax turns the scores into weights, and the weights combine the Values. Multi-head attention runs several attention operations in parallel so the model can learn different relationships at once.
+
+Positional encoding gives a Transformer information about the order of tokens, because self-attention alone ignores order. The original Transformer used sinusoidal positional encodings. Rotary Position Embedding (RoPE) is a modern method used in Llama and many other models that rotates the Query and Key vectors by position.
+
+Decoder-only Transformers such as GPT and Llama generate text one token at a time using causal masking, which blocks attention to future tokens. Encoder-decoder Transformers such as T5 read an input with an encoder and write an output with a decoder. Most modern general-purpose LLMs are decoder-only.
+
+The KV cache stores the Key and Value vectors of earlier tokens during generation so they do not need to be recomputed for every new token. The KV cache speeds up inference but uses a lot of GPU memory for long contexts. Grouped-Query Attention reduces the KV cache size by sharing Key and Value heads between several Query heads.
+
+FlashAttention is an algorithm created by Tri Dao and colleagues in 2022 that computes exact attention faster and with less memory. FlashAttention reduces slow reads and writes to GPU memory by processing attention in small tiles. FlashAttention makes long-context training and inference practical.
+
+vLLM is an open-source LLM serving engine developed at UC Berkeley. vLLM uses PagedAttention, which stores the KV cache in small memory pages to avoid waste. vLLM also uses continuous batching to serve many users efficiently.
+
+Mixture of Experts (MoE) is an architecture where each layer contains several expert networks and a router selects a few experts for every token. Mixtral 8x7B, released by Mistral AI in December 2023, is a well-known open-weight MoE model. MoE models have a large total parameter count but use only a fraction of the parameters per token, which lowers inference cost.
+
+Scaling laws describe how model performance improves with more parameters, more data and more compute. The Chinchilla study from DeepMind in 2022 showed that many models were undertrained and that model size and training tokens should grow together. Scaling laws guide how teams plan training budgets.
+
+Reinforcement Learning from Human Feedback (RLHF) aligns an LLM with human preferences. RLHF first trains a reward model on human rankings of answers and then optimizes the LLM against that reward model, often with the PPO algorithm. OpenAI used RLHF in InstructGPT in 2022, which led to ChatGPT.
+
+Direct Preference Optimization (DPO) is an alignment method published by Stanford researchers in 2023. DPO trains the model directly on pairs of preferred and rejected answers without a separate reward model. DPO is simpler and more stable than RLHF with PPO and is widely used for open models.
+
+Constitutional AI is an alignment method developed by Anthropic. Constitutional AI uses a written set of principles so that a model can critique and revise its own answers, and the revised answers are used for training. This reduces the amount of human labeling needed for harmlessness.
+
+Knowledge distillation trains a small student model to imitate a larger teacher model. Distillation produces compact models that are cheaper to run while keeping much of the teacher's quality. Many small open models are trained with data generated by larger models.
+
+Speculative decoding speeds up generation by using a small draft model to propose several tokens and a large model to verify them in one step. When the large model accepts the draft tokens, several tokens are produced for the cost of one large-model pass. The output quality stays identical to normal decoding.
+
+Reasoning models are LLMs trained with reinforcement learning to think through a problem before answering. Reasoning models spend extra tokens on a hidden or visible chain of thought, which improves results on math, coding and planning. The cost is higher latency and more tokens per answer.
+
+An AI agent is a system where an LLM decides which actions to take to reach a goal. The ReAct pattern, published in 2022, alternates between reasoning steps and tool actions and feeds each observation back into the model. Agents combine an LLM with tools, memory and a planning loop.
+
+Agent memory has several layers. Short-term memory is the conversation inside the context window, and long-term memory is stored in a database such as a vector store or a graph database. Retrieval from long-term memory brings relevant past information back into the prompt.
+
+The Model Context Protocol (MCP) is an open standard introduced by Anthropic in November 2024 for connecting LLM applications to tools and data sources. An MCP server exposes tools, resources and prompts, and an MCP client inside the application calls them. MCP avoids writing a custom integration for every tool.
+
+Multi-agent systems use several specialized agents that cooperate on a task, for example a planner, a researcher and a reviewer. LangGraph, AutoGen and CrewAI are frameworks for building multi-agent workflows. Clear roles, shared state and limits on loops are needed to keep these systems reliable.
+
+Graph RAG is a form of RAG that retrieves from a knowledge graph instead of only similar text chunks. Microsoft Research described a Graph RAG approach in 2024 that builds a graph of entities, detects communities of related entities and summarizes each community. Graph RAG answers multi-hop and corpus-wide questions better than plain vector RAG.
+
+A knowledge graph stores facts as nodes and relationships, for example the entity Priya Sharma connected to Project Atlas by the relationship WORKS_ON. An LLM can extract these triples from text during indexing. Entity resolution then merges different names for the same real-world thing.
+
+Neo4j is a graph database that stores data as nodes, relationships and properties and is queried with the Cypher language. Neo4j 5 includes a vector index, so a single database can hold both the graph and the embeddings. The Neo4j Graph Data Science library provides algorithms such as Leiden community detection and PageRank.
+
+Text-to-Cypher is a technique where an LLM translates a natural-language question into a Cypher query. Text-to-Cypher works well for precise questions about counts and filters when the graph schema is clear. The generated query should be validated and run with a read-only database user for safety.
+
+Hybrid retrieval combines vector search, keyword search and graph traversal in one pipeline. A common pattern is vector-then-graph, where vector search finds starting entities and graph traversal expands to connected facts. The retrieved evidence is then ranked and passed to the LLM.
+
+An LLM router is a component that decides how each request is handled. A retrieval router chooses between graph search, vector search or a direct answer, and a model router chooses between a small cheap model and a large powerful model. Routers can use rules, embeddings, an LLM classifier or a trained classifier, and they need a fallback for mistakes.
+
+Semantic routing compares the embedding of a question with example questions for each route and picks the nearest route. Semantic routing is fast and cheap because it avoids an extra LLM call. Libraries such as Semantic Router implement this approach.
+
+LLM-as-a-judge uses a strong LLM to score the outputs of another system against criteria such as correctness and helpfulness. LLM-as-a-judge scales evaluation to thousands of examples but can show bias toward long answers or its own style. Teams calibrate the judge against a small set of human-labeled examples.
+
+Prompt injection is an attack where malicious text in the input or in retrieved documents tries to override the instructions of an LLM. Indirect prompt injection hides the instructions inside web pages, emails or files that the system reads. Defenses include separating instructions from data, limiting tool permissions, filtering output and requiring human approval for risky actions.
+
+The OWASP Top 10 for LLM Applications is a security guide that lists risks such as prompt injection, sensitive information disclosure, insecure output handling and excessive agency. Red teaming means deliberately attacking an AI system to find weaknesses before real attackers do. Security testing should cover the model, the retrieval layer, the tools and the data.
+
+LLMOps applies MLOps practices to LLM applications. LLMOps covers prompt versioning, evaluation pipelines, deployment, monitoring, cost tracking and feedback collection. MLflow, Weights and Biases and LangSmith are tools used for experiment tracking and tracing.
+
+Observability for LLM applications records traces of every request, including the prompt, retrieved chunks, tool calls, latency, token usage and cost. Langfuse and LangSmith are tools that provide tracing and dashboards. Traces make it possible to find why an answer was wrong and to build better test sets.
+
+Multimodal models process more than one type of data, such as text, images and audio. CLIP from OpenAI learns a shared embedding space for images and text. Vision-language models such as GPT-4o, Gemini and Llama vision models can answer questions about images and documents.
+
+Diffusion models generate images by starting from random noise and removing the noise step by step. Latent diffusion, used by Stable Diffusion, performs this process in a compressed latent space to save computation. Generative Adversarial Networks, introduced by Ian Goodfellow in 2014, are an older approach where a generator and a discriminator compete.
+
+State space models such as Mamba, published in 2023 by Albert Gu and Tri Dao, are an alternative to attention for sequence modeling. State space models process long sequences with cost that grows linearly with length. Hybrid architectures mix attention layers with state space layers.
+
+Long-context techniques let models handle very large inputs. RoPE scaling, sliding-window attention and ring attention extend usable context length. Even with large context windows, RAG is often cheaper and more accurate than placing all documents in the prompt.
+
+Cloud platforms offer managed Generative AI services. Amazon Bedrock provides access to foundation models through a single API and supports Knowledge Bases for RAG, including GraphRAG with Amazon Neptune Analytics. Azure OpenAI Service, Google Vertex AI and Amazon SageMaker are other managed platforms for deploying and tuning models.
+
+The choice between prompting, RAG and fine-tuning depends on the problem. Prompting is the cheapest first step, RAG adds fresh and private knowledge, and fine-tuning changes the style, format or behavior of the model. Many production systems combine all three.
+
+AI governance covers the policies and laws that control AI use. The EU AI Act classifies AI systems by risk level and sets requirements for high-risk uses. Organizations also follow frameworks such as the NIST AI Risk Management Framework to manage safety, privacy and fairness.
+
+A production Generative AI architecture usually contains an API gateway, an LLM router, retrieval services, a vector database, a graph database, guardrails, a monitoring stack and a feedback loop. Each component can be scaled and replaced independently. Good engineering of this whole system matters as much as the choice of model.

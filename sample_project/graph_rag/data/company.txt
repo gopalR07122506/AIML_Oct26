@@ -1,0 +1,15 @@
+Priya Sharma is a Senior ML Engineer at Nimbus Labs. She reports to Rahul Mehta, the Head of AI.
+
+Rahul Mehta leads the AI division at Nimbus Labs and is the sponsor of Project Atlas.
+
+Project Atlas is a customer-support chatbot that answers questions from company documents. It was launched in March 2025 and is built with Python, Ollama and Neo4j.
+
+Arjun Patel is a Data Engineer who works on Project Atlas. He builds the data pipelines using Apache Airflow and stores the data in PostgreSQL.
+
+Priya Sharma also works on Project Atlas, where she designed the retrieval layer.
+
+Project Orion is a fraud-detection system built by Neha Kulkarni, an MLOps Engineer. Neha deploys models using Docker and Kubernetes. She reports to Rahul Mehta.
+
+Nimbus Labs is headquartered in Pune and has a second office in Bengaluru.
+
+Sneha Rao is a Product Manager who coordinates Project Atlas and Project Orion together with Rahul Mehta.
